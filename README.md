@@ -29,7 +29,7 @@ cd overleaf-toolkit
 bin/init
 ```
 
-2. **Change the version number of ShareLaTeX and the Docker image:**
+2. **Change the version number of ShareLaTeX and the Docker image (I used 4.1.1):**
 
 ```bash
 nano config/overleaf.rc
@@ -44,6 +44,7 @@ sudo bin/up
 This command may take some time. You can leave it running and open a new terminal for the next steps.
 
 4. **Configure the ShareLaTeX container:**
+
 In a new terminal, run the following commands:
 
 ```bash
