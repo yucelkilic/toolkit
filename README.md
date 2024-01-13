@@ -32,7 +32,7 @@ bin/init
 2. **Change the version number of ShareLaTeX and the Docker image:**
 
 ```bash
-nano config/overleaf.rc
+nano config/version
 ```
 Change the version numbers as needed (I used 4.1.1).
 
@@ -70,6 +70,7 @@ cd /home
 wget https://github.com/plk/biber/archive/refs/tags/v2.19.zip 
 unzip v2.19.zip 
 cd biber-2.19/
+cpan
 > install Module::Build
 > install PAR::Packer
 > quit
@@ -88,6 +89,10 @@ Press `CTRL+C` to stop the previous command (`/bin/up`) in first terminal and re
 ```bash
 sudo bin/up
 ```
+
+6. **Creating and managing users:**
+
+Once the Overleaf instance is running, visit the `/launchpad` page to set up your first admin user. For further documentation visit [here](https://github.com/overleaf/overleaf/wiki/Creating-and-managing-users).
 
 ## Documentation
 
